@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Taif! ❤️</title>
+    <style>
+        /* Use uploaded image as background */
+        body {
+            background-image: url('https://hosainyosama.github.io/las/background.jpg.jpg'); /* Replace with your server path */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+            position: relative;
+        }
+
+        /* Container for Main Content */
+        .container {
+            margin-top: 10%;
+            position: relative;
+            z-index: 3;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            font-size: 3.5em;
+            color: #ffd700;
+            margin-bottom: 20px;
+            animation: sparkle 3s linear infinite;
+        }
+
+        .message {
+            font-size: 1.8em;
+            color: #ffffff;
+            animation: fadeIn 1s ease-out 1.5s forwards;
+        }
+
+        /* Buttons styling */
+        .choice-buttons {
+            margin-top: 20px;
+        }
+
+        .choice-button {
+            font-size: 1.2em;
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            color: white;
+            background-color: #ff69b4;
+            box-shadow: 0 4px #d3557a;
+            transition: background-color 0.3s;
+        }
+
+        .choice-button:hover {
+            background-color: #ff85a4;
+        }
+
+        .balloon {
+            font-size: 2.5em;
+            position: absolute;
+            animation: floatBalloons 2s ease-in-out infinite, wiggle 1s ease-in-out infinite;
+        }
+
+        @keyframes sparkle {
+            0%, 100% { text-shadow: 0 0 5px #ff69b4, 0 0 10px #ff69b4, 0 0 15px #ffd700; }
+            50% { text-shadow: 0 0 15px #ff69b4, 0 0 20px #ffd700; }
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @keyframes floatBalloons {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        @keyframes wiggle {
+            0%, 100% { transform: rotate(0deg); }
+            50% { transform: rotate(5deg); }
+        }
+    </style>
+</head>
+<body>
+    <audio autoplay loop>
+        <source src="path_to_your_music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <div class="container">
+        <h1>Happy Birthday, Taif! <span class="heart">❤️</span></h1>
+        <p class="message">Dear Taif, I hope your day is filled with all the love, joy, and happiness you bring to my life every day. You are my sunshine, my joy, and my everything. "I LOVE YOU Bea". Happy Birthday!</p>
+        
+        <!-- Choice Buttons -->
+        <div class="choice-buttons">
+            <button class="choice-button" onclick="showLove()">Love You</button>
+            <button class="choice-button" onclick="showHug()">Hug You</button>
+            <button class="choice-button" onclick="showKiss()">Kiss You</button>
+        </div>
+
+        <!-- Message Container -->
+        <div id="response-message" style="margin-top: 20px; font-size: 1.5em; color: #ffd700;"></div>
+    </div>
+
+    <!-- Balloons -->
+    <p class="balloon" style="left: 10%; animation-delay: 0s;">🎈</p>
+    <p class="balloon" style="left: 20%; animation-delay: 0.5s;">🎈</p>
+    <p class="balloon" style="left: 30%; animation-delay: 1s;">🎈</p>
+    <p class="balloon" style="left: 40%; animation-delay: 1.5s;">🎈</p>
+    <p class="balloon" style="left: 50%; animation-delay: 2s;">🎈</p>
+
+    <script>
+        function showLove() {
+            document.getElementById("response-message").innerHTML = "💖 I love you more than words can say! 💖";
+        }
+
+        function showHug() {
+            document.getElementById("response-message").innerHTML = "🤗 Sending a big, warm hug to you! 🤗";
+        }
+
+        function showKiss() {
+            document.getElementById("response-message").innerHTML = "😘 A sweet kiss just for you! 😘";
+        }
+    </script>
+</body>
+</html>
